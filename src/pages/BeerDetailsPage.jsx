@@ -16,7 +16,7 @@ function BeerDetailsPage() {
 
   const [beers, setBeers] = useState(null);
   useEffect(() => {
-    axios.get(`${API_URL}/${beerId}`)
+    axios.get(`${API_URL}/beers/${beerId}`)
     .then(response => {
       setBeer(response.data);
     })
